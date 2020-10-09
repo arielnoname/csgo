@@ -97,10 +97,10 @@ viewmodel_recoil "0" // idem
 
 net_graph "1" net_graphheight "9999" 
 bind "TAB" "+scorenet" 
-alias "+scorenet" "+showscores; 
-net_graphheight 0" 
-alias "-scorenet" "-showscores;
-net_graphheight 9999" 
+alias "+scorenet" "+showscores; net_graphheight 0" 
+alias "-scorenet" "-showscores; net_graphheight 9999" 
+
+
 host_writeconfig 
 echo "nonamesitos cfg"
 ```
