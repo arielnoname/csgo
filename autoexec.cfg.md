@@ -16,6 +16,7 @@ bind g "+use"
 bind t "drop"
 bind shift "+duck" 
 bind space "+jump" 
+bind q "+lookatweapon"
 
 bind MWHEELUP "+jump" 
 bind MWHEELDOWN "invnext" 
