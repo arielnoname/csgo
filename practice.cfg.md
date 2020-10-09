@@ -1,3 +1,4 @@
+```
 mp_limitteams "0"
 mp_autoteambalance "0"
 mp_roundtime "60"
@@ -19,3 +20,4 @@ sv_cheats "1"
 mat_wireframe "1"
 mp_warmup_end
 mp_restartgame "1"
+```
