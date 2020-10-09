@@ -161,19 +161,19 @@ alias "-scorenet" "-showscores; net_graphheight 9999"
 
 
 // OBSCURE SHIt
-r_dynamic “0” // Turns off dynamic lighting, which some players find distracting.
+r_dynamic "0" // Turns off dynamic lighting, which some players find distracting.
 r_drawparticles "0" //  Turns off engine particles.
-r_drawtracers_firstperson “1”
-cl_disablehtmlmotd “1” (Disables The Servers Message of The Day.)
-cl_forcepreload “1” (Preloads The Whole Map & Sounds.)
-mat_queue_mode “2” (Forcing Your CPU To Use Multi-Threaded Mode.)
-r_drawtracers_firstperson “0” (First-person Tracers OFF.)
-r_eyegloss “0” (No Makeup.)
-r_eyemove “0” (No Eye Movement.)
-r_eyeshift_x “0” (No Eye Movement X-Angel.)
-r_eyeshift_y “0” (No Eye Movement Y-Angel.)
-r_eyeshift_z “0” (No Eye Movement Z-Angel.)
-r_eyesize “0” (Smaller Eyes.)
+r_drawtracers_firstperson "1"
+cl_disablehtmlmotd "1" (Disables The Servers Message of The Day.)
+cl_forcepreload "1" (Preloads The Whole Map & Sounds.)
+mat_queue_mode "2" (Forcing Your CPU To Use Multi-Threaded Mode.)
+r_drawtracers_firstperson "0" (First-person Tracers OFF.)
+r_eyegloss "0" (No Makeup.)
+r_eyemove "0" (No Eye Movement.)
+r_eyeshift_x "0" (No Eye Movement X-Angel.)
+r_eyeshift_y "0" (No Eye Movement Y-Angel.)
+r_eyeshift_z "0" (No Eye Movement Z-Angel.)
+r_eyesize "0" (Smaller Eyes.)
 
 host_writeconfig 
 echo "##############################################"
