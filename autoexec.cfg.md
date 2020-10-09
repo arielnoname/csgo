@@ -1,4 +1,8 @@
 ```
+echo "##############################################"
+echo "##################NONAMESIYO##################"
+echo "##############################################"
+
 sensivity 3
 
 bind e "+forward" 
@@ -25,6 +29,12 @@ bind x "use weapon_smokegrenade"
 bind c "use weapon_hegrenade" 
 bind v "use weapon_molotov;use weapon_incgrenade"
 
+//bind "f" "buy flashbang; use weapon_knife; use weapon_flashbang"
+//bind "t" "buy smokegrenade; use weapon_knife; use weapon_smokegrenade"
+//bind "q" "buy hegrenade; use weapon_knife; use weapon_hegrenade"
+//bind "r" "buy incgrenade; buy molotov; use weapon_knife; use weapon_molotov; use weapon_incgrenade"
+//bind "c" "buy decoy; use weapon_knife; use weapon_decoy"
+
 bind o "messagemode" 
 bind p "messagemode2"
 
@@ -37,12 +47,43 @@ bind "h" "give weapon_hegrenade;give weapon_flashbang;give weapon_smokegrenade;g
 bind "j" "cast_ray"
 bind ctrl "noclip"
 
+// MISC
+fps_max "0"
+cl_radar_always_centered "0" // Keeps the radar centered
 cl_autowepswitch "0" // no cambia al arma recogida
+cl_autohelp "0" // Enable/disable on screen hints (enemy, trade weapon, etc.)
+cl_showhelp "0" // Show the hints on screen
+cl_righthand "0" // 0 for left hand 1 for right hand or use bindtoggle <key> cl_righthand to 
+
+// INTERNET
+rate "128000" // This is your client rate, you may need to lower it if your net speed cannot keep up
+cl_cmdrate "128" // 128 tick servers require this rate (64 will default to 64 for you, no need to edit)
+cl_updaterate "128" // 128 tick servesr require this rate (64 will default to 64 for you, no need to edit)
+cl_interp_ratio 1 // Common interp setting for MM/League
+cl_interp 0 // Common interp setting for MM/League
+tickrate 128 // If you launch a local server it will run at 128 tick (can also be done with -tickrate 128 put as launch option)
+mm_dedicated_search_maxping "50" // no entra a servers con mas de ese ping 
 
 // MOUSE HARDWARE
 m_rawinput "1" 
 m_mouseaccel1 "0" 
 m_mouseaccel2 "0"
+
+// Audio
+
+volume "1"
+voice_enable "1"
+voice_scale "1"
+windows_speaker_config "1"
+snd_musicvolume "0.04"
+snd_mixahead "0.05"
+snd_tensecondwarning_volume "1"
+snd_menumusic_volume "0"
+snd_roundend_volume "0"
+snd_roundstart_volume "0"
+snd_deathcamera_volume "0"
+snd_mapobjective_volume "0"
+snd_headphone_pan_exponent "2"
 
 // HUD
 cl_hud_healthammo_style "0" // 3 balitas marcadas pa la glock
@@ -74,6 +115,24 @@ cl_crosshairstyle "4"
 cl_crosshairthickness "0"
 cl_crosshairusealpha "1"
 
+
+// CROSSHAIR ALTERNO
+//cl_crosshairalpha "150" // Changes opacity/alpha of the crosshair color
+//cl_crosshaircolor "5" // Will give you a pink crosshair
+//cl_crosshaircolor_b "255" // Edits crosshair color manually
+//cl_crosshaircolor_g "0" // Edits crosshair color manually
+//cl_crosshaircolor_r "255" // Edits crosshair color manually
+//cl_crosshairdot "0" // Dot in the center of the crosshair
+//cl_crosshairscale "0" // Edits scale/size of crosshair
+//cl_crosshairsize "3" // Edits the size of the crosshair
+//cl_crosshairthickness ".75" // Changes thickness of the crosshair itself
+//cl_crosshairusealpha "0" // Forces use of alpha changes made here
+//cl_crosshairstyle "4" // 0 for new CSGO, 1 for static, 2 for old CS:S style (static), and 3 for old CS:S (dynamic)
+//cl_crosshair_drawoutline "1" // outlines the crosshair
+//cl_crosshair_outlinethickness ".5" // thickness of the outline
+
+
+
 // RADAR 
 cl_radar_always_centered "0" 
 cl_radar_scale "0.28" 
@@ -101,6 +160,23 @@ alias "+scorenet" "+showscores; net_graphheight 0"
 alias "-scorenet" "-showscores; net_graphheight 9999" 
 
 
+// OBSCURE SHIt
+r_dynamic “0” // Turns off dynamic lighting, which some players find distracting.
+r_drawparticles "0" //  Turns off engine particles.
+r_drawtracers_firstperson “1”
+cl_disablehtmlmotd “1” (Disables The Servers Message of The Day.)
+cl_forcepreload “1” (Preloads The Whole Map & Sounds.)
+mat_queue_mode “2” (Forcing Your CPU To Use Multi-Threaded Mode.)
+r_drawtracers_firstperson “0” (First-person Tracers OFF.)
+r_eyegloss “0” (No Makeup.)
+r_eyemove “0” (No Eye Movement.)
+r_eyeshift_x “0” (No Eye Movement X-Angel.)
+r_eyeshift_y “0” (No Eye Movement Y-Angel.)
+r_eyeshift_z “0” (No Eye Movement Z-Angel.)
+r_eyesize “0” (Smaller Eyes.)
+
 host_writeconfig 
-echo "nonamesitos cfg"
+echo "##############################################"
+echo "##################NONAMESIYO##################"
+echo "##############################################"
 ```
