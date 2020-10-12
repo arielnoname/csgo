@@ -74,17 +74,26 @@ m_mouseaccel2 "0"
 
 volume "1"
 voice_enable "1"
-voice_scale "1"
-windows_speaker_config "1"
-snd_musicvolume "0.04"
+voice_scale "0.8"
+snd_musicvolume "0.05"
 snd_mixahead "0.05"
-snd_tensecondwarning_volume "1"
+snd_tensecondwarning_volume "0.2"
 snd_menumusic_volume "0"
-snd_roundend_volume "0"
+snd_roundend_volume "0.2"
 snd_roundstart_volume "0"
 snd_deathcamera_volume "0"
 snd_mapobjective_volume "0"
-snd_headphone_pan_exponent "2"
+snd_mute_losefocus "0"
+
+windows_speaker_config "1"
+snd_front_headphone_position "90.0"
+snd_rear_headphone_position "90.0"
+snd_headphone_pan_radial_weight "1.0"
+snd_headphone_pan_exponent "1.2"
+dsp_enhance_stereo "0"
+
+snd_legacy_surround "0"
+snd_pitchquality "1"
 
 // HUD
 cl_hud_healthammo_style "0" // 3 balitas marcadas pa la glock
