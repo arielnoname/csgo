@@ -22,18 +22,23 @@ bind MWHEELUP "+jump"
 bind MWHEELDOWN "invnext" 
 bind MOUSE1 "+attack" 
 bind MOUSE2 "+attack2" 
+bind MOUSE3 
 bind MOUSE4 "+voicerecord" 
 bind MOUSE5 "clutch_mode_toggle"
 
-bind z "use weapon_flashbang" 
-bind x "use weapon_smokegrenade" 
-bind c "use weapon_hegrenade" 
-bind v "use weapon_molotov;use weapon_incgrenade"
+bind F1 holdpos
+bind F2 roger
+bind F4 autobuy
 
-//bind "f" "buy flashbang; use weapon_knife; use weapon_flashbang"
-//bind "t" "buy smokegrenade; use weapon_knife; use weapon_smokegrenade"
-//bind "q" "buy hegrenade; use weapon_knife; use weapon_hegrenade"
-//bind "r" "buy incgrenade; buy molotov; use weapon_knife; use weapon_molotov; use weapon_incgrenade"
+//bind z "use weapon_flashbang" 
+//bind x "use weapon_smokegrenade" 
+//bind c "use weapon_hegrenade" 
+//bind v "use weapon_molotov;use weapon_incgrenade"
+
+bind "z" "buy flashbang; use weapon_knife; use weapon_flashbang"
+bind "x" "buy smokegrenade; use weapon_knife; use weapon_smokegrenade"
+bind "c" "buy hegrenade; use weapon_knife; use weapon_hegrenade"
+bind "v" "buy incgrenade; buy molotov; use weapon_knife; use weapon_molotov; use weapon_incgrenade"
 //bind "c" "buy decoy; use weapon_knife; use weapon_decoy"
 
 bind o "messagemode" 
@@ -74,7 +79,7 @@ m_mouseaccel2 "0"
 
 volume "1"
 voice_enable "1"
-voice_scale "0.8"
+voice_scale "0.5"
 snd_musicvolume "0.05"
 snd_mixahead "0.05"
 snd_tensecondwarning_volume "0.2"
@@ -174,16 +179,16 @@ alias "-scorenet" "-showscores; net_graphheight 9999"
 r_dynamic "0" // Turns off dynamic lighting, which some players find distracting.
 r_drawparticles "0" //  Turns off engine particles.
 r_drawtracers_firstperson "1"
-cl_disablehtmlmotd "1" (Disables The Servers Message of The Day.)
-cl_forcepreload "1" (Preloads The Whole Map & Sounds.)
-mat_queue_mode "2" (Forcing Your CPU To Use Multi-Threaded Mode.)
-r_drawtracers_firstperson "0" (First-person Tracers OFF.)
-r_eyegloss "0" (No Makeup.)
-r_eyemove "0" (No Eye Movement.)
-r_eyeshift_x "0" (No Eye Movement X-Angel.)
-r_eyeshift_y "0" (No Eye Movement Y-Angel.)
-r_eyeshift_z "0" (No Eye Movement Z-Angel.)
-r_eyesize "0" (Smaller Eyes.)
+cl_disablehtmlmotd "1"// (Disables The Servers Message of The Day.)
+cl_forcepreload "1" //(Preloads The Whole Map & Sounds.)
+mat_queue_mode "2" //(Forcing Your CPU To Use Multi-Threaded Mode.)
+r_drawtracers_firstperson "0" //(First-person Tracers OFF.)
+r_eyegloss "0"// (No Makeup.)
+r_eyemove "0" //(No Eye Movement.)
+r_eyeshift_x "0" //(No Eye Movement X-Angel.)
+r_eyeshift_y "0"// (No Eye Movement Y-Angel.)
+r_eyeshift_z "0"// (No Eye Movement Z-Angel.)
+r_eyesize "0" //(Smaller Eyes.)
 
 host_writeconfig 
 echo "##############################################"
