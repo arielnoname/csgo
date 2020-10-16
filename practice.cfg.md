@@ -17,7 +17,8 @@ sv_showimpacts_time "10"
 bot_kick
 con_enable "1"
 sv_cheats "1"
-mat_wireframe "1"
+// mat_wireframe "1"
+spec_show_xray 1
 mp_warmup_end
 mp_restartgame "1"
 ```
