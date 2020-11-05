@@ -22,7 +22,7 @@ bind MWHEELUP "+jump"
 bind MWHEELDOWN "invnext" 
 bind MOUSE1 "+attack" 
 bind MOUSE2 "+attack2" 
-bind MOUSE3 
+bind MOUSE3 ""
 bind MOUSE4 "+voicerecord" 
 bind MOUSE5 "clutch_mode_toggle"
 
@@ -30,12 +30,6 @@ bind F1 holdpos
 bind F2 roger
 bind F3 cheer
 bind F4 "say gl&hf a divertirse!"
-
-
-//bind z "use weapon_flashbang" 
-//bind x "use weapon_smokegrenade" 
-//bind c "use weapon_hegrenade" 
-//bind v "use weapon_molotov;use weapon_incgrenade"
 
 bind "z" "buy flashbang; use weapon_flashbang"
 bind "x" "buy smokegrenade; use weapon_smokegrenade"
@@ -69,7 +63,6 @@ cl_cmdrate "128" // 128 tick servers require this rate (64 will default to 64 fo
 cl_updaterate "128" // 128 tick servesr require this rate (64 will default to 64 for you, no need to edit)
 cl_interp_ratio 1 // Common interp setting for MM/League
 cl_interp 0 // Common interp setting for MM/League
-tickrate 128 // If you launch a local server it will run at 128 tick (can also be done with -tickrate 128 put as launch option)
 mm_dedicated_search_maxping "50" // no entra a servers con mas de ese ping 
 
 // MOUSE HARDWARE
@@ -79,10 +72,9 @@ m_mouseaccel2 "0"
 
 // Audio
 
-volume "1"
+volume "0.05"
 voice_enable "1"
 voice_scale "0.3"
-snd_musicvolume "0.05"
 snd_mixahead "0.05"
 snd_tensecondwarning_volume "0.2"
 snd_menumusic_volume "0"
@@ -111,41 +103,28 @@ cl_hud_background_alpha "0" // sin fondo pa los numeritos etc
 cl_hud_bomb_under_radar "1" // c4 debajo del radar
 
 // CROSSHAIR. Este es un punto rojo y no se mueve. // Para setear con un mapa, ir a: // 1. https://steamcommunity.com/sharedfiles/filedetails/?id=308490450 
-cl_crosshair_drawoutline "0" 
+
+cl_crosshairstyle "4" 
+cl_crosshairusealpha "1"
+cl_crosshairalpha "255" // full opacity
+cl_crosshaircolor "0" // Will give you a red crosshair
+cl_crosshairdot "1" 
+cl_crosshairsize "0.6" // justo antes de ser cruz
+cl_crosshairthickness "0.7" // un punto mas
+cl_crosshair_drawoutline "0" // no shadow
+cl_crosshair_outlinethickness 0 // no se usa
+cl_crosshairgap "-3.2" // min pa que quede bien con el punto
+// sgte es para que no se mueva
 cl_crosshair_dynamic_maxdist_splitratio "0.0" 
 cl_crosshair_dynamic_splitalpha_innermod "1" 
 cl_crosshair_dynamic_splitalpha_outermod "0.300000" 
 cl_crosshair_dynamic_splitdist "5" 
-cl_crosshair_friendly_warning "1" 
-cl_crosshair_outlinethickness "0.5" 
+// MISC
+cl_crosshair_friendly_warning "0" 
 cl_crosshair_sniper_show_normal_inaccuracy "0" 
-cl_crosshair_sniper_width "1" cl_crosshair_t "0" 
-cl_crosshairalpha "255" cl_crosshaircolor "1" 
-cl_crosshaircolor_b "0" cl_crosshaircolor_g "0" 
-cl_crosshaircolor_r "255" cl_crosshairdot "1" 
-cl_crosshairgap "-4.000000" 
+cl_crosshair_sniper_width "1"
+cl_crosshair_t "0" 
 cl_crosshairgap_useweaponvalue "0" 
-cl_crosshairsize "0.500000" 
-cl_crosshairstyle "4"
-cl_crosshairthickness "0"
-cl_crosshairusealpha "1"
-
-
-// CROSSHAIR ALTERNO
-//cl_crosshairalpha "150" // Changes opacity/alpha of the crosshair color
-//cl_crosshaircolor "5" // Will give you a pink crosshair
-//cl_crosshaircolor_b "255" // Edits crosshair color manually
-//cl_crosshaircolor_g "0" // Edits crosshair color manually
-//cl_crosshaircolor_r "255" // Edits crosshair color manually
-//cl_crosshairdot "0" // Dot in the center of the crosshair
-//cl_crosshairscale "0" // Edits scale/size of crosshair
-//cl_crosshairsize "3" // Edits the size of the crosshair
-//cl_crosshairthickness ".75" // Changes thickness of the crosshair itself
-//cl_crosshairusealpha "0" // Forces use of alpha changes made here
-//cl_crosshairstyle "4" // 0 for new CSGO, 1 for static, 2 for old CS:S style (static), and 3 for old CS:S (dynamic)
-//cl_crosshair_drawoutline "1" // outlines the crosshair
-//cl_crosshair_outlinethickness ".5" // thickness of the outline
-
 
 
 // RADAR 
@@ -155,10 +134,10 @@ cl_radar_icon_scale_min "2" // puntitos del radar gigantes
 cl_hud_radar_scale "1.15"
 
 // lo que se mueve la mano (cre)oa
-cl_bob_lower_amt "5" 
-cl_bobamt_lat "0.1" 
-cl_bobamt_vert "0.1" 
-cl_bobcycle "0.98"
+cl_bob_lower_amt "5" // cuanto desaparece la mano al correr. 5 min. no desaparece.
+cl_bobamt_lat "0.1" // cuanto se mueve la mano horizontalmente
+cl_bobamt_vert "0.1" // idem vertical
+cl_bobcycle "0.98" // no cache bien
 
 // Como se ven las manos
 viewmodel_fov "0" // 0 se ve menos arma, 68 se ve mas. en realidad creo que 54 es el minimo 
@@ -193,5 +172,4 @@ r_eyesize "0" //(Smaller Eyes.)
 host_writeconfig 
 echo "##############################################"
 echo "##################NONAMESIYO##################"
-echo "##############################################"
-```
+echo "##############################################"```
