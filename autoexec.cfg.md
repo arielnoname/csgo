@@ -3,7 +3,7 @@ echo "##############################################"
 echo "##################NONAMESIYO##################"
 echo "##############################################"
 
-sensitivity 3
+sensitivity 2.4
 
 bind e "+forward" 
 bind d "+back" 
@@ -28,18 +28,20 @@ bind MOUSE5 "clutch_mode_toggle"
 
 bind F1 holdpos
 bind F2 roger
-bind F4 autobuy
+bind F3 cheer
+bind F4 "say gl&hf a divertirse!"
+
 
 //bind z "use weapon_flashbang" 
 //bind x "use weapon_smokegrenade" 
 //bind c "use weapon_hegrenade" 
 //bind v "use weapon_molotov;use weapon_incgrenade"
 
-bind "z" "buy flashbang; use weapon_knife; use weapon_flashbang"
-bind "x" "buy smokegrenade; use weapon_knife; use weapon_smokegrenade"
-bind "c" "buy hegrenade; use weapon_knife; use weapon_hegrenade"
-bind "v" "buy incgrenade; buy molotov; use weapon_knife; use weapon_molotov; use weapon_incgrenade"
-//bind "c" "buy decoy; use weapon_knife; use weapon_decoy"
+bind "z" "buy flashbang; use weapon_flashbang"
+bind "x" "buy smokegrenade; use weapon_smokegrenade"
+bind "c" "buy hegrenade; use weapon_hegrenade"
+bind "v" "buy incgrenade; buy molotov; use weapon_molotov; use weapon_incgrenade"
+//bind "c" "buy decoy; use weapon_decoy"
 
 bind o "messagemode" 
 bind p "messagemode2"
