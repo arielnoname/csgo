@@ -1,5 +1,7 @@
 Nonamesito Basic CSGO Guide v0.1
 
+D:\Games\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg
+
 BASIC SHIT:
 
 - Movimiento:
