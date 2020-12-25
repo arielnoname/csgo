@@ -1,24 +1,26 @@
 ```
-mp_limitteams "0"
-mp_autoteambalance "0"
-mp_roundtime "60"
-mp_roundtime_defuse "60"
-mp_maxmoney "60000"
-mp_startmoney "60000"
-mp_freezetime "0"
-mp_buytime "9999"
-mp_buy_anywhere "1"
-sv_infinite_ammo "1"
-ammo_grenade_limit_total "5"
-sv_grenade_trajectory "1"
-sv_grenade_trajectory_time "10"
-sv_showimpacts "1"
-sv_showimpacts_time "10"
-bot_kick
-con_enable "1"
-sv_cheats "1"
-// mat_wireframe "1"
-spec_show_xray 1
-mp_warmup_end
-mp_restartgame "1"
+sv_cheats 1      // Turn on cheats
+sv_infinite_ammo 1      // Infinite nades
+sv_grenade_trajectory 1      // Grenades will leave throwing lines behind them
+sv_grenade_trajectory_time 11     // Lines will be shown for 11 seconds
+sv_grenade_trajectory_thickness 1      // Thicker trajectory lines     
+sv_showimpacts 1      // Show where bullets go
+sv_showimpacts_time 9      // Bullet traces will dissapear in 9 seconds
+bot_kick all      // Kick all bots
+bot_stop 1      // Stop bots (when added)
+ammo_grenade_limit_total 5      // Have 5 grenades total
+mp_roundtime_defuse 60     // Increase round timer to 60 on defuse maps
+mp_roundtime_hostage 60    // Increase round timer to 60 in case it is a hostage map
+mp_limitteams 0     // Don't cap the teams
+mp_roundtime 999      // Maximum roundtime set to 999 minutes.
+mp_autoteambalance 0     // Don't autobalance the teams
+mp_freezetime 0     // No waiting time at the start of round
+mp_maxmoney 99999      // Expands 16k money limit
+mp_startmoney 99999      // You will have a lot of money
+mp_buytime 3600     // Shop is open for 60 minutes
+mp_buy_anywhere 1       // You can buy anywhere on the map
+ammo_grenade_limit_total 5     // You can have 5 different nades in your hands
+mp_restartgame 1      // Restart the game for above commands
+mp_warmup_end     // In case it's still warmup, end it 
+say "NONAMESITOS PRACTICASION"
 ```
