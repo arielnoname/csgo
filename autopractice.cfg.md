@@ -21,7 +21,7 @@ mp_buytime 3600     // Shop is open for 60 minutes
 mp_buy_anywhere 1       // You can buy anywhere on the map
 ammo_grenade_limit_total 5     // You can have 5 different nades in your hands
 sv_alltalk 1
-
+sv_full_alltalk 1 
 mp_restartgame 1      // Restart the game for above commands
 mp_warmup_end     // In case it's still warmup, end it 
 
