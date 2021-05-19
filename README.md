@@ -1,6 +1,11 @@
 Nonamesito Basic CSGO Guide v0.1
 
-D:\Games\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg
+CONFIGS:
+- autoexec.cfg & autopractice.cfg van en el siguiente directorio. (Ojo con los binds de movimiento): ```SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo\cfg```
+
+- Se encuentra ese directorio así: ```https://savelocation.net/steam-library-folder```
+
+En la consola escribes ```exec autoexec.cfg``` para asegurarte de correrlo.
 
 BASIC SHIT:
 
@@ -34,16 +39,16 @@ BASIC SHIT:
 
 
 DUST2:
-    - [TERRO] ENTRAR B:
-        - https://www.youtube.com/watch?v=f_M3xrc3bxY
-        - https://www.youtube.com/watch?v=6li4FuJNx5Q
-    - [CT] CUIDAR Y RETAKE B:
-        - https://www.youtube.com/watch?v=L2xTPHGlLj0
-    - GRANADAS:
-        - https://www.youtube.com/watch?v=XDCja2ckJCg
-        - https://www.youtube.com/watch?v=Ivv56w_kc_Q
-    - TIPS:
-        - https://www.youtube.com/watch?v=tEM5_OWhBJM
+- [TERRO] ENTRAR B:
+    - https://www.youtube.com/watch?v=f_M3xrc3bxY
+    - https://www.youtube.com/watch?v=6li4FuJNx5Q
+- [CT] CUIDAR Y RETAKE B:
+    - https://www.youtube.com/watch?v=L2xTPHGlLj0
+- GRANADAS:
+    - https://www.youtube.com/watch?v=XDCja2ckJCg
+    - https://www.youtube.com/watch?v=Ivv56w_kc_Q
+- TIPS:
+    - https://www.youtube.com/watch?v=tEM5_OWhBJM
 
 
 
@@ -59,6 +64,6 @@ Varias cosas robadas de: https://steamcommunity.com/sharedfiles/filedetails/?l=n
     Paste the following: +exec autoexec.cfg
     For the common CS:GO launch options (disable video, open console, 128tick local server, force monitor refresh rate etc.) use:
     
-    -console -novid -high -threads 4 +exec autoexec.cfg -tickrate 128 -refresh 144
+    -console -novid -high -threads 4 +exec autoexec.cfg -tickrate 128
     
     Imagen: https://steamuserimages-a.akamaihd.net/ugc/598161395753900450/A7C5AB002CA002B767E9DFB6690CEC8DAD69901C/
