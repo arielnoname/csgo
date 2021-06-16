@@ -3,39 +3,45 @@ echo "##############################################"
 echo "##################NONAMESIYO##################"
 echo "##############################################"
 
-sensitivity 2.4
+unbindall
+sensitivity 2
 
-bind e "+forward" 
+bind 1 "slot1"
+bind 2 "slot2"
+bind 3 "slot3"
+bind 4 "slot4"
+bind 5 "slot5"
+
+bind e "+forward;r_cleardecals" 
 bind d "+back" 
 bind s "+moveleft" 
 bind f "+moveright" 
 bind a "+speed" 
 bind w "lastinv" 
-bind r "+reload;r_cleardecals" 
+bind r "+reload" 
 bind g "+use" 
 bind t "drop"
 bind shift "+duck" 
 bind space "+jump" 
 bind q "+lookatweapon"
-
+bind b "buymenu"
 bind MWHEELUP "+jump" 
 bind MWHEELDOWN "invnext" 
 bind MOUSE1 "+attack" 
 bind MOUSE2 "+attack2" 
-bind MOUSE3 ""
+bind MOUSE3 "+spray_menu"
 bind MOUSE4 "+voicerecord" 
 bind MOUSE5 "clutch_mode_toggle"
 
-bind F1 holdpos
-bind F2 roger
-bind F3 cheer
-bind F4 "say gl&hf a divertirse!"
+bind F1 player_ping // binded in mouse settings to middle under the scroll 
+bind F2 negative
+bind F4 cheer
+bind F12 jpeg
 
 bind "z" "buy flashbang; use weapon_flashbang"
 bind "x" "buy smokegrenade; use weapon_smokegrenade"
 bind "c" "buy hegrenade; use weapon_hegrenade"
 bind "v" "buy incgrenade; buy molotov; use weapon_molotov; use weapon_incgrenade"
-//bind "c" "buy decoy; use weapon_decoy"
 
 bind o "messagemode" 
 bind p "messagemode2"
@@ -74,11 +80,11 @@ m_mouseaccel2 "0"
 
 volume "0.05"
 voice_enable "1"
-voice_scale "0.3"
+voice_scale "0.2"
 snd_mixahead "0.05"
 snd_tensecondwarning_volume "0.2"
 snd_menumusic_volume "0"
-snd_roundend_volume "0.2"
+snd_roundend_volume "0"
 snd_roundstart_volume "0"
 snd_deathcamera_volume "0"
 snd_mapobjective_volume "0"
@@ -172,4 +178,5 @@ r_eyesize "0" //(Smaller Eyes.)
 host_writeconfig 
 echo "##############################################"
 echo "##################NONAMESIYO##################"
-echo "##############################################"```
+echo "##############################################"
+```
