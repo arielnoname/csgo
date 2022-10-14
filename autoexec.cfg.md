@@ -33,10 +33,17 @@ bind MOUSE3 "+spray_menu"
 bind MOUSE4 "+voicerecord" 
 bind MOUSE5 "clutch_mode_toggle"
 
-bind F1 player_ping // binded in mouse settings to middle under the scroll 
+bind F1 player_ping
 bind F2 negative
 bind F4 cheer
 bind F12 jpeg
+
+bind "KP_END" ""
+bind "KP_PGDN" ""
+bind "KP_HOME" ""
+bind "KP_PGUP" ""
+bind "KP_DEL" "use weapon_knife; use weapon_c4; drop; say_team SUELTO LA BOMBA LOCO RECOGELA RECOGELA BOMBA BOMBA"
+
 
 bind "z" "buy flashbang; use weapon_flashbang"
 bind "x" "buy smokegrenade; use weapon_smokegrenade"
@@ -54,6 +61,14 @@ bind alt "+jumpthrow"
 bind "h" "give weapon_hegrenade;give weapon_flashbang;give weapon_smokegrenade;give weapon_incgrenade;give weapon_molotov;give weapon_decoy" 
 bind "j" "cast_ray"
 bind ctrl "noclip"
+
+
+// TWINSEN'S DISPLAY DAMAGE INFO SCRIPT
+developer 1
+con_filter_enable 2
+con_filter_text_out "Player:"
+con_filter_text "damage Given"
+
 
 // MISC
 fps_max "0"
@@ -76,8 +91,9 @@ m_rawinput "1"
 m_mouseaccel1 "0" 
 m_mouseaccel2 "0"
 
-// Audio
 
+
+// Audio
 volume "0.05"
 voice_enable "1"
 voice_scale "0.2"
@@ -176,6 +192,7 @@ r_eyeshift_z "0"// (No Eye Movement Z-Angel.)
 r_eyesize "0" //(Smaller Eyes.)
 
 host_writeconfig 
+
 echo "##############################################"
 echo "##################NONAMESIYO##################"
 echo "##############################################"
