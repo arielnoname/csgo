@@ -4,7 +4,7 @@ echo "##################NONAMESIYO##################"
 echo "##############################################"
 
 unbindall
-sensitivity 2
+sensitivity 1.8
 
 bind 1 "slot1"
 bind 2 "slot2"
@@ -23,7 +23,9 @@ bind g "+use"
 bind t "drop"
 bind shift "+duck" 
 bind space "+jump" 
-bind q "+lookatweapon"
+
+bind "z" "+lookatweapon"
+
 bind b "buymenu"
 bind MWHEELUP "+jump" 
 bind MWHEELDOWN "invnext" 
@@ -32,6 +34,7 @@ bind MOUSE2 "+attack2"
 bind MOUSE3 "+spray_menu"
 bind MOUSE4 "+voicerecord" 
 bind MOUSE5 "clutch_mode_toggle"
+bind MOUSE6 "player_ping" 
 
 bind F1 player_ping
 bind F2 negative
@@ -44,8 +47,7 @@ bind "KP_HOME" ""
 bind "KP_PGUP" ""
 bind "KP_DEL" "use weapon_knife; use weapon_c4; drop; say_team SUELTO LA BOMBA LOCO RECOGELA RECOGELA BOMBA BOMBA"
 
-
-bind "z" "buy flashbang; use weapon_flashbang"
+bind "q" "buy flashbang; use weapon_flashbang"
 bind "x" "buy smokegrenade; use weapon_smokegrenade"
 bind "c" "buy hegrenade; use weapon_hegrenade"
 bind "v" "buy incgrenade; buy molotov; use weapon_molotov; use weapon_incgrenade"
@@ -57,18 +59,12 @@ alias "+jumpthrow" "+jump;-attack"
 alias "-jumpthrow" "-jump" 
 bind alt "+jumpthrow"
 
-// PRACTICE BINDS
-bind "h" "give weapon_hegrenade;give weapon_flashbang;give weapon_smokegrenade;give weapon_incgrenade;give weapon_molotov;give weapon_decoy" 
-bind "j" "cast_ray"
-bind ctrl "noclip"
-
 
 // TWINSEN'S DISPLAY DAMAGE INFO SCRIPT
 developer 1
 con_filter_enable 2
 con_filter_text_out "Player:"
 con_filter_text "damage Given"
-
 
 // MISC
 fps_max "0"
@@ -90,7 +86,6 @@ mm_dedicated_search_maxping "50" // no entra a servers con mas de ese ping
 m_rawinput "1" 
 m_mouseaccel1 "0" 
 m_mouseaccel2 "0"
-
 
 
 // Audio
@@ -196,4 +191,4 @@ host_writeconfig
 echo "##############################################"
 echo "##################NONAMESIYO##################"
 echo "##############################################"
-```
+
