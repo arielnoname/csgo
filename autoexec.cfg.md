@@ -59,6 +59,7 @@ alias "+jumpthrow" "+jump;-attack"
 alias "-jumpthrow" "-jump" 
 bind alt "+jumpthrow"
 
+r_drawtracers_firstperson 1
 
 // TWINSEN'S DISPLAY DAMAGE INFO SCRIPT
 developer 1
@@ -99,7 +100,7 @@ snd_roundend_volume "0"
 snd_roundstart_volume "0"
 snd_deathcamera_volume "0"
 snd_mapobjective_volume "0"
-snd_mute_losefocus "0"
+// snd_mute_losefocus "0"
 
 snd_front_headphone_position "90.0"
 snd_rear_headphone_position "90.0"
