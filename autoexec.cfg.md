@@ -1,4 +1,3 @@
-```
 echo "##############################################"
 echo "##################NONAMESIYO##################"
 echo "##############################################"
@@ -34,7 +33,6 @@ bind MOUSE2 "+attack2"
 bind MOUSE3 "+spray_menu"
 bind MOUSE4 "+voicerecord" 
 bind MOUSE5 "clutch_mode_toggle"
-bind MOUSE6 "player_ping" 
 
 bind F1 player_ping
 bind F2 negative
@@ -174,12 +172,9 @@ alias "-scorenet" "-showscores; net_graphheight 9999"
 
 // OBSCURE SHIt
 r_dynamic "0" // Turns off dynamic lighting, which some players find distracting.
-r_drawparticles "0" //  Turns off engine particles.
-r_drawtracers_firstperson "1"
 cl_disablehtmlmotd "1"// (Disables The Servers Message of The Day.)
-cl_forcepreload "1" //(Preloads The Whole Map & Sounds.)
 mat_queue_mode "2" //(Forcing Your CPU To Use Multi-Threaded Mode.)
-r_drawtracers_firstperson "0" //(First-person Tracers OFF.)
+
 r_eyegloss "0"// (No Makeup.)
 r_eyemove "0" //(No Eye Movement.)
 r_eyeshift_x "0" //(No Eye Movement X-Angel.)
